@@ -179,25 +179,19 @@ function Get-AllGroups {
 		catch {
 			Write-Error -Message "Error in reciving the data from InMobile. Message from InMobile: $DataSet000"
 		}
-		try
-		{
+	}
+	process {
+		try {
 			for ($i = 0; $i -lt $DataSet001.ApiResult.Data.Group.Count; $i++) {
 				$AllGroupsObject = [PSCustomObject]@{
 					ID = $DataSet001.ApiResult.Data.Group[$i].ID
 					Name = $DataSet001.ApiResult.Data.Group[$i].Name
 				}
 				$AllGroupsObject
-			}
+			}			
 		}
 		catch {
 			Write-Error -Message "An error in creating the Object from the XML data recived from InMobile."
-		}
-	}
-	process {
-		try {
-			
-		}
-		catch {
 		}
 	}
 	end {

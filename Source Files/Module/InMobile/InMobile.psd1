@@ -78,7 +78,7 @@
 	# Functions to export from this module
 	FunctionsToExport = @(
 		'New-ConfigFile',
-		'Get-GroupData'
+		'Get-AllGroups'
 	) #For performance, list functions explicitly
 	
 	# Cmdlets to export from this module

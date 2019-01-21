@@ -9,7 +9,13 @@ Version: 0.0.0.1
 
 * Design
     * Next in line
+        * Get-AllGroups
+            * Create function with bare min error handling. V.0.0.0.2
+            * Output it to PSCustom Object.V.0.0.0.2
     * Roadmap
+        * Creation of a Config File - New-ConfigFile
+            * Demo Config file
+            * Production Config File, with clean data fields.
 
 * Issues
     * 

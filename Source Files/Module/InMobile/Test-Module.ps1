@@ -26,22 +26,11 @@ $Config			= (ConvertFrom-Json -InputObject $(Get-Content -Path "$((Get-Item -Pat
 $API			= $Config.System_Information.InMobile_API
 
 #Explicitly import the module for testing
-Import-Module 'InMobile'
+Import-Module 'InMobile' -Force
 
 #Run each module function
-Get-GroupData -API $API | Out-File -PSPath "$ScriptLocation\XMLDataFromInMobile.xml"
-[XML]$FromInMobile = Get-Content "$ScriptLocation\XMLDataFromInMobile.xml"
+Get-AllGroups -API $API
 
-$FromInMobile.ApiResult.Data.Group.Id
-
-foreach ($Group in ($FromInMobile.ApiResult.Data.Group)) {
-	$GroupsObj = @{
-		GroupeName = $Group.Name;
-		GroupeID = $Group.Id
-	}
-	$object = new-object psobject -Property $GroupsObj
-	$object
-}
 
 #Sample Pester Test
 #Describe "Test InMobile" {

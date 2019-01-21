@@ -163,27 +163,39 @@ function New-ConfigFile {
 	.LINK
 		about_functions_advanced_methods
 #>
-function Get-GroupData {
+function Get-AllGroups {
 	[CmdletBinding()]
 	param(
 		[Parameter(Position=0, Mandatory=$true)]
 		[System.String]
-		$API,
-		[Parameter(Position=1)]
-		[System.Int32]
-		$ParameterB
+		$API
 	)
 	begin {
 		try
 		{
 			$DataSet000 = Invoke-WebRequest -Body $MultipartContent -Method 'POST' -Uri "https://mm.inmobile.dk/Api/V3/Groups/GetAll?apiKey=$($API.trim())"
+			[XML]$DataSet001 = $DataSet000
 		}
 		catch {
+			Write-Error -Message "Error in reciving the data from InMobile. Message from InMobile: $DataSet000"
+		}
+		try
+		{
+			for ($i = 0; $i -lt $DataSet001.ApiResult.Data.Group.Count; $i++) {
+				$AllGroupsObject = [PSCustomObject]@{
+					ID = $DataSet001.ApiResult.Data.Group[$i].ID
+					Name = $DataSet001.ApiResult.Data.Group[$i].Name
+				}
+				$AllGroupsObject
+			}
+		}
+		catch {
+			Write-Error -Message "An error in creating the Object from the XML data recived from InMobile."
 		}
 	}
 	process {
 		try {
-			$DataSet000.content
+			
 		}
 		catch {
 		}

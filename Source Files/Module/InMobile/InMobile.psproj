@@ -2,12 +2,16 @@
   <Version>2.1</Version>
   <FileID>b478f6f0-e9fc-4081-be5d-82451bd31e82</FileID>
   <ProjectType>1</ProjectType>
-  <Folders />
+  <Folders>
+    <Folder>Functions</Folder>
+  </Folders>
   <Files>
     <File Build="2">InMobile.psd1</File>
     <File Build="0" ExportFunctions="True">InMobile.psm1</File>
     <File Build="1" Shared="False" ReferenceFunction="Invoke-Test-Module_ps1" ExportFunctions="False">Test-Module.ps1</File>
     <File Build="2">.gitignore</File>
+    <File Build="2" Shared="True" ReferenceFunction="Invoke-Get-AllGroups_ps1" ExportFunctions="False">Functions\Get-AllGroups.ps1</File>
+    <File Build="2" Shared="True" ReferenceFunction="Invoke-New-ConfigFile_ps1" ExportFunctions="False">Functions\New-ConfigFile.ps1</File>
   </Files>
   <StartupScript>E:\Documents\Local Github Repos\InMobile\Source Files\Module\InMobile\Test-Module.ps1</StartupScript>
 </Project>

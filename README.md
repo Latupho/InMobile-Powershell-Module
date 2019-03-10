@@ -8,29 +8,31 @@ Version: 0.0.0.1
 ## ToDo
 
 * Design
-    * Next in line
-        * Get-AllGroups
-            * Create function with bare min error handling. V.0.0.0.2
-            * Output it to PSCustom Object.V.0.0.0.2
-    * Roadmap
-        * Creation of a Config File - New-ConfigFile
-            * Demo Config file
-            * Production Config File, with clean data fields.
+  * Next in line
+    * Create all functions in there own seprate .Ps1 file.
+    * Dot scource them in or in other ways get them gathered in InMobile.psm1
+  * Get-AllGroups
+    * Create function with bare min error handling. V.0.0.0.2
+    * Output it to PSCustom Object.V.0.0.0.2
+  * Roadmap
+    * Creation of a Config File - New-ConfigFile
+    * Demo Config file
+    * Production Config File, with clean data fields.
 
 * Issues
-    * 
+  *
 
 * Functions
-    * 
+  * 
 
 ## Todo [Done]
 
 * Design
-    * Next in line
-    * Roadmap
+  * Next in line
+  * Roadmap
 
 * Issues
-    * 
+  * 
 
 * Functions
-    * 
+  * 

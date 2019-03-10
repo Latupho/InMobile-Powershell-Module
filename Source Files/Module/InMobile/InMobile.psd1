@@ -76,10 +76,7 @@
 	NestedModules = @()
 	
 	# Functions to export from this module
-	FunctionsToExport = @(
-		'New-ConfigFile',
-		'Get-AllGroups'
-	) #For performance, list functions explicitly
+	FunctionsToExport = @() #For performance, list functions explicitly
 	
 	# Cmdlets to export from this module
 	CmdletsToExport = '*' 

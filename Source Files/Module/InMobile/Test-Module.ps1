@@ -26,7 +26,7 @@ $Config			= (ConvertFrom-Json -InputObject $(Get-Content -Path "$((Get-Item -Pat
 $API			= $Config.System_Information.InMobile_API
 
 #Explicitly import the module for testing
-Import-Module 'InMobile' -Force
+#Import-Module 'InMobile' -Force
 
 #Run each module function
 Get-AllGroups -API $API

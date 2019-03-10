@@ -1,4 +1,4 @@
-﻿<#	
+<#	
 	===========================================================================
 	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2019 v5.6.156
 	 Created on:   	18-01-2019 11:07
@@ -12,7 +12,4 @@
 
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-#$Functions = Get-ChildItem -Path "$here\functions\*.ps1" -Recurse -Exclude "*Pester*,*.test.ps1*"
-#ForEach ($Item in $Functions) {
-#    . $Item.FullName
-#}
+$Functions = Get-ChildItem -Path "$here\functions\*.ps1" -Recurse -Exclude "*Pester*,*.test.ps1*"

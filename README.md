@@ -16,14 +16,7 @@ Version: 0.0.0.1
   * Issue
 
 * Functions
-  * Get-Group
-    * Get a singel or multibol groups.
-      * One Avd-Functions with 2 Functions:
-      1. __Get all groups__ by using --> https://mm.inmobile.dk/Api/V3/Groups/GetAll)
-          * Ex. Get-group, with no -name will get all groups.
-          * Ex. Get-group -name "Gr*1" will, behaind the sceens, get all groups and look for the quired inputs and return thoes.
-      2. __Get specific group__ by using --> https://mm.inmobile.dk/Api/V3/Groups/GetSingle
-          * Ex. Get-group -name "Group1"
+  * Get-Group - Issue: #1
 
 ## Todo [Done]
 

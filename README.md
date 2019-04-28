@@ -1,6 +1,6 @@
 # InMobile Module
 
-**Please do read the Disclaimer.md before any use of anything on this repository.**
+**Please do read the [Disclaimer.md](/Disclaimer.md) before any use of anything on this repository.**
 
 This is an unofficial client for [inMobile](https://inmobile.dk) API. It's build as a Powershell Module, that can interact with the InMobile API.
 

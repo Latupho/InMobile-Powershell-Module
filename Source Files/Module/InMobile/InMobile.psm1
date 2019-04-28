@@ -142,7 +142,7 @@ function New-ConfigFile {
 		This example shows how to call the Get-Group function with positional parameters.
 
 	.INPUTS
-		System.String,System.Int32
+		System.String
 
 	.OUTPUTS
 		System.String
@@ -171,9 +171,9 @@ function Get-Group {
 		[Parameter(Position=0, Mandatory=$true)]
 		[System.String]
 		$API,
-		[Parameter(Position=1)]
-		[System.Int32]
-		$ParameterB
+		[Parameter(Position=1, Mandatory=$false))]
+		[System.String]
+		$Name
 	)
 	begin {
 		try

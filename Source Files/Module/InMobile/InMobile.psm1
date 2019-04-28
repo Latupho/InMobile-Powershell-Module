@@ -120,10 +120,10 @@ function New-ConfigFile {
 
 <#
 	.SYNOPSIS
-		A brief description of the Get-GroupData function.
+		A brief description of the Get-Group function.
 
 	.DESCRIPTION
-		A detailed description of the Get-GroupData function.
+		A detailed description of the Get-Group function.
 
 	.PARAMETER  ParameterA
 		The description of a the ParameterA parameter.
@@ -132,14 +132,14 @@ function New-ConfigFile {
 		The description of a the ParameterB parameter.
 
 	.EXAMPLE
-		PS C:\> Get-GroupData -ParameterA 'One value' -ParameterB 32
+		PS C:\> Get-Group -ParameterA 'One value' -ParameterB 32
 		'This is the output'
-		This example shows how to call the Get-GroupData function with named parameters.
+		This example shows how to call the Get-Group function with named parameters.
 
 	.EXAMPLE
-		PS C:\> Get-GroupData 'One value' 32
+		PS C:\> Get-Group 'One value' 32
 		'This is the output'
-		This example shows how to call the Get-GroupData function with positional parameters.
+		This example shows how to call the Get-Group function with positional parameters.
 
 	.INPUTS
 		System.String,System.Int32
@@ -150,6 +150,8 @@ function New-ConfigFile {
 	.NOTES
 		For more information about advanced functions, call Get-Help with any
 		of the topics in the links listed below.
+		If you like to read more about what have been done, and changes read
+		 more on github issues -> https://github.com/Latupho/InMobile-Powershell-Module: #1 
 
 	.LINK
 		about_functions_advanced
@@ -163,7 +165,7 @@ function New-ConfigFile {
 	.LINK
 		about_functions_advanced_methods
 #>
-function Get-GroupData {
+function Get-Group {
 	[CmdletBinding()]
 	param(
 		[Parameter(Position=0, Mandatory=$true)]

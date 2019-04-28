@@ -171,7 +171,7 @@ function Get-Group {
 		[Parameter(Position=0, Mandatory=$true)]
 		[System.String]
 		$API,
-		[Parameter(Position=1, Mandatory=$false))]
+		[Parameter(Position=1, Mandatory=$false)]
 		[System.String]
 		$Name
 	)

@@ -5,7 +5,7 @@
 This is an unofficial client for [inMobile](https://inmobile.dk) API. It's build as a Powershell Module, that can interact with the InMobile API.
 
 Version: 0.0.0.1
-This is written so it supports [Microsoft Powershell Core](https://github.com/PowerShell/PowerShell).
+<br>This is written so it supports [Microsoft Powershell Core](https://github.com/PowerShell/PowerShell).
 
 ## ToDo
 
